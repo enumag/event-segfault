@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+    api:
+        build: .
+        env_file: .env
+        links:
+            - postgres
+        stdin_open: true
+        tty: true
+
+    postgres:
+        image: postgres:12-alpine
+        env_file: .env

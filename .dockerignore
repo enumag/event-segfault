@@ -1,0 +1,5 @@
+/vendor/
+.dockerignore
+.idea
+.git
+.gitignore

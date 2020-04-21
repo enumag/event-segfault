@@ -1,0 +1,5 @@
+{
+    "require": {
+        "amphp/postgres": "^1.2"
+    }
+}
