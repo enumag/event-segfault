@@ -8,7 +8,7 @@ FROM wodby/base-php:${PHP_VERSION}-debug AS extensions
 
 RUN apk add --no-cache autoconf libevent-dev postgresql-dev ${PHPIZE_DEPS} && \
     docker-php-ext-install sockets pgsql && \
-    pecl install event && \
+    pecl install event-2.5.5 && \
     docker-php-ext-enable --ini-name extensions.ini event
 
 

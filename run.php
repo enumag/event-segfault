@@ -4,6 +4,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Amp\Postgres;
 
+echo 'ext-event version: ' . phpversion('event') . PHP_EOL;
+
 Amp\Loop::run(function () {
     $config = Postgres\ConnectionConfig::fromString('host=postgres:5432 user=postgres password=postgres');
 
